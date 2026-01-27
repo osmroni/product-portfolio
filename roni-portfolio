@@ -23,6 +23,29 @@
   .skills { display:flex; flex-wrap:wrap; gap:15px; margin-top:20px; }
   .skill { background:#e0e7ff; padding:10px 15px; border-radius:20px; font-weight:600; font-size:0.9em; }
   footer { background:#4b6cb7; color:white; text-align:center; padding:30px 20px; margin-top:60px; }
+
+@media (max-width: 768px) {
+  header {
+    padding: 60px 20px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  section {
+    margin: 50px auto;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .metric {
+    font-size: 1.4rem;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -80,6 +103,22 @@
   </div>
 </section>
 
+<section>
+  <h2>Product Metrics</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Daily Active Users</h3>
+      <canvas id="dauChart" height="160"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>User Retention</h3>
+      <canvas id="retentionChart" height="160"></canvas>
+    </div>
+  </div>
+</section>
+
 <section id="skills">
   <h2>Skills & Tools</h2>
   <div class="skills">
@@ -100,6 +139,50 @@
   <p>💼 <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></p>
   <p>🌐 Personal Website: <a href="https://www.yourdomain.com">www.yourdomain.com</a></p>
 </section>
+
+<script>
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = 1;
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+});
+cards.forEach(c => observer.observe(c));
+
+function drawLineChart(canvasId, data, color) {
+  const c = document.getElementById(canvasId);
+  const ctx = c.getContext("2d");
+  const w = c.width = c.offsetWidth;
+  const h = c.height;
+
+  ctx.clearRect(0,0,w,h);
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+
+  data.forEach((v,i) => {
+    const x = (i/(data.length-1))*w;
+    const y = h - (v/100)*h;
+    i === 0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+  });
+
+  ctx.stroke();
+}
+
+drawLineChart("dauChart",
+  [20,25,28,35,42,48,55,63,70,80],
+  "#6a5cff"
+);
+
+drawLineChart("retentionChart",
+  [100,72,58,46,39,33,28],
+  "#9aa0ff"
+);
+</script>
+
 
 <footer>
   <p>&copy; 2026 [Your Name]. Product Manager Portfolio.</p>
