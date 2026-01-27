@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Your Name] – Product Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Global styles */
+  body { font-family: 'Inter', sans-serif; margin:0; padding:0; background:#f5f5f5; color:#1a1a1a; }
+  a { color:#4b6cb7; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  h1,h2,h3 { margin:0; }
+  h1 { font-size:3em; font-weight:700; }
+  h2 { font-size:2em; color:#333; margin-bottom:20px; }
+  h3 { font-size:1.5em; color:#4b6cb7; margin-bottom:10px; }
+  section { max-width:1000px; margin:60px auto; padding:0 20px; }
+  .container { display:flex; flex-wrap:wrap; gap:30px; }
+  .card { background:white; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.08); padding:25px; flex:1 1 300px; }
+  .card img { width:100%; border-radius:12px; margin-bottom:15px; }
+  header { background:linear-gradient(135deg,#4b6cb7,#182848); color:white; text-align:center; padding:80px 20px; }
+  header p { font-size:1.2em; margin-top:10px; }
+  .skills { display:flex; flex-wrap:wrap; gap:15px; margin-top:20px; }
+  .skill { background:#e0e7ff; padding:10px 15px; border-radius:20px; font-weight:600; font-size:0.9em; }
+  footer { background:#4b6cb7; color:white; text-align:center; padding:30px 20px; margin-top:60px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>[Your Name]</h1>
+  <p>Product Manager | Building Data-Driven Consumer Products | Passionate About Engagement & AI</p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I’m a Product Manager with <strong>4+ years of experience</strong> launching and scaling <strong>consumer-facing digital products</strong>. Skilled in <strong>end-to-end product ownership, UX collaboration, and analytics-driven decision making</strong>. I thrive at the intersection of <strong>data, design, and technology</strong> and enjoy building products that <strong>engage users and grow communities</strong>.</p>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="container">
+
+    <!-- Case Study 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/600x350?text=Legacy+Product+Redesign" alt="Legacy Product Redesign">
+      <h3>Legacy Product Redesign – Boosting User Engagement</h3>
+      <ul>
+        <li><strong>Problem:</strong> Low adoption due to outdated UX.</li>
+        <li><strong>Role:</strong> Full product lifecycle, UX & engineering collaboration.</li>
+        <li><strong>Solution:</strong> Streamlined workflows, simplified onboarding, interactive tutorials.</li>
+        <li><strong>Results:</strong> <strong>Tripled active user engagement</strong>, 40% higher task completion.</li>
+      </ul>
+    </div>
+
+    <!-- Case Study 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/600x350?text=Community+Feature+Launch" alt="Community Feature Launch">
+      <h3>New Feature Launch – Driving Community Interaction</h3>
+      <ul>
+        <li><strong>Problem:</strong> Users needed ways to connect dynamically.</li>
+        <li><strong>Role:</strong> Feature ideation, scoping, launch, analytics tracking.</li>
+        <li><strong>Solution:</strong> Community hubs, posts/comments, creator tools.</li>
+        <li><strong>Results:</strong> 50% increase in daily active users, content creation doubled.</li>
+      </ul>
+    </div>
+
+    <!-- Case Study 3 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/600x350?text=Analytics+Driven+Retention" alt="Analytics-Driven Retention">
+      <h3>Analytics-Driven Iteration – Optimizing Retention</h3>
+      <ul>
+        <li><strong>Problem:</strong> Declining retention after initial adoption.</li>
+        <li><strong>Role:</strong> Data analysis, UX/engineering collaboration.</li>
+        <li><strong>Solution:</strong> Personalized notifications, guided workflows.</li>
+        <li><strong>Results:</strong> <strong>Retention +30%</strong>, feature usage +25%.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <div class="skills">
+    <span class="skill">Product Lifecycle</span>
+    <span class="skill">UX/UI Collaboration</span>
+    <span class="skill">User Research</span>
+    <span class="skill">Data-Driven Decisions</span>
+    <span class="skill">Analytics (Amplitude/Mixpanel)</span>
+    <span class="skill">Agile/Scrum</span>
+    <span class="skill">Stakeholder Management</span>
+    <span class="skill">Community & Engagement Optimization</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📧 <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  <p>💼 <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></p>
+  <p>🌐 Personal Website: <a href="https://www.yourdomain.com">www.yourdomain.com</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2026 [Your Name]. Product Manager Portfolio.</p>
+</footer>
+
+</body>
+</html>
