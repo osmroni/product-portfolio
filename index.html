@@ -6,93 +6,63 @@
 <title>Roni Shitrit – Product Manager</title>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  /* Global styles */
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#1a1a1a;
+  }
 
-body {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-}
+  header { 
+    background:linear-gradient(135deg,#4b6cb7,#182848);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+  }
+  header h1 { font-size:3em; font-weight:700; margin:0; }
+  header p { font-size:1.2em; margin:10px 0; }
 
-h1 {
-  font-weight: 700;
-}
-
-h2 {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-h3 {
-  font-weight: 600;
-}
-
-strong {
-  font-weight: 600;
-}
-
-  a { color:#4b6cb7; text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  h1,h2,h3 { margin:0; }
-  h1 { font-size:3em; font-weight:700; }
-  h2 { font-size:2em; color:#333; margin-bottom:20px; }
-  h3 { font-size:1.5em; color:#4b6cb7; margin-bottom:10px; }
   section { max-width:1000px; margin:60px auto; padding:0 20px; }
+  h2 { font-size:2em; font-weight:700; color:#333; margin-bottom:20px; letter-spacing:-0.02em; }
+  h3 { font-size:1.5em; font-weight:600; color:#4b6cb7; margin-bottom:10px; }
+
   .container { display:flex; flex-wrap:wrap; gap:30px; }
   .card { background:white; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.08); padding:25px; flex:1 1 300px; }
   .card img { width:100%; border-radius:12px; margin-bottom:15px; }
+  .card ul { padding-left:20px; }
 
-#portfolio .card {
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+  #portfolio .card { cursor:pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  #portfolio .card:hover { transform: translateY(-4px); box-shadow:0 10px 24px rgba(0,0,0,0.12); }
 
-#portfolio .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
-}
-
-  header { background:linear-gradient(135deg,#4b6cb7,#182848); color:white; text-align:center; padding:80px 20px; }
-  header p { font-size:1.2em; margin-top:10px; }
   .skills { display:flex; flex-wrap:wrap; gap:15px; margin-top:20px; }
   .skill { background:#e0e7ff; padding:10px 15px; border-radius:20px; font-weight:600; font-size:0.9em; }
+
   footer { background:#4b6cb7; color:white; text-align:center; padding:30px 20px; margin-top:60px; }
 
-@media (max-width: 768px) {
-  header {
-    padding: 60px 20px;
+  @media (max-width: 768px) {
+    header { padding:60px 20px; }
+    header h1 { font-size:2.2rem; }
+    section { margin:50px auto; }
+    .card { padding:20px; }
   }
-
-  header h1 {
-    font-size: 2.2rem;
-  }
-
-  section {
-    margin: 50px auto;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .metric {
-    font-size: 1.4rem;
-  }
-}
-
 </style>
 </head>
 <body>
 
 <header>
   <h1>Roni Shitrit</h1>
-  <p>Senior Product Manager</p>
-  <p>Creating Data-Driven Consumer Products | Passionate About Engagement & AI | Solution-Oriented</p>
+  <p>Product Manager</p>
+  <p>Leading B2B SaaS & Data-Driven Products | Driving Adoption, Engagement & Impact</p>
 </header>
 
 <section id="about">
   <h2>About Me</h2>
-  <p>I’m a Product Manager with <strong>4+ years of experience</strong> launching and scaling <strong>consumer-facing digital products</strong>. Skilled in <strong>end-to-end product ownership, UX collaboration, and analytics-driven decision making</strong>. I thrive at the intersection of <strong>data, design, and technology</strong> and enjoy building products that <strong>engage users and grow communities</strong>.</p>
+  <p>
+    I’m a Product Manager with <strong>4+ years of experience</strong> leading <strong>business-critical B2B SaaS and data-driven products</strong> used by tens of thousands of users. Experienced in <strong>improving underperforming systems, increasing adoption, and enhancing core user journeys</strong>. Former Unit 8200 officer with strong technical expertise and full product lifecycle experience — from defining vision and roadmaps to executing launches and tracking outcomes in fast-paced environments.
+  </p>
 </section>
 
 <section id="portfolio">
@@ -100,71 +70,57 @@ strong {
   <div class="container">
 
     <!-- Case Study 1 -->
-    <div class="card featured" onclick="window.location='case-study.html'">
+    <div class="card" onclick="window.location='case-study.html'">
       <img src="https://via.placeholder.com/600x350?text=Legacy+Product+Redesign" alt="Legacy Product Redesign">
-      <h3>Legacy Product Redesign – Boosting User Engagement</h3>
+      <h3>Legacy Product Redesign</h3>
       <ul>
-        <li><strong>Problem:</strong> Low adoption due to outdated UX.</li>
+        <li><strong>Problem:</strong> Low adoption due to outdated UX and fragmented workflows.</li>
         <li><strong>Role:</strong> Full product lifecycle, UX & engineering collaboration.</li>
-        <li><strong>Solution:</strong> Streamlined workflows, simplified onboarding, interactive tutorials.</li>
-        <li><strong>Results:</strong> <strong>Tripled active user engagement</strong>, 40% higher task completion.</li>
+        <li><strong>Solution:</strong> Streamlined core workflows, simplified onboarding, interactive tutorials.</li>
+        <li><strong>Impact:</strong> <strong>3× active users</strong>, +40% task completion, restored usability at scale.</li>
       </ul>
     </div>
 
     <!-- Case Study 2 -->
     <div class="card">
-      <img src="https://via.placeholder.com/600x350?text=Community+Feature+Launch" alt="Community Feature Launch">
-      <h3>New Feature Launch – Driving Community Interaction</h3>
+      <img src="https://via.placeholder.com/600x350?text=Legacy+SaaS+Replacement" alt="Legacy SaaS Replacement">
+      <h3>Legacy SaaS Replacement</h3>
       <ul>
-        <li><strong>Problem:</strong> Users needed ways to connect dynamically.</li>
-        <li><strong>Role:</strong> Feature ideation, scoping, launch, analytics tracking.</li>
-        <li><strong>Solution:</strong> Community hubs, posts/comments, creator tools.</li>
-        <li><strong>Results:</strong> 50% increase in daily active users, content creation doubled.</li>
+        <li><strong>Problem:</strong> Outdated system limiting new workflows and adoption.</li>
+        <li><strong>Role:</strong> Product pivot strategy, end-to-end delivery, cross-functional coordination.</li>
+        <li><strong>Solution:</strong> Replaced legacy system with modern SaaS, enabling expansion into new workflows.</li>
+        <li><strong>Impact:</strong> <strong>3× active users</strong>, increased engagement, scalable platform for future features.</li>
       </ul>
     </div>
 
     <!-- Case Study 3 -->
     <div class="card">
-      <img src="https://via.placeholder.com/600x350?text=Analytics+Driven+Retention" alt="Analytics-Driven Retention">
-      <h3>Analytics-Driven Iteration – Optimizing Retention</h3>
+      <img src="https://via.placeholder.com/600x350?text=Analytics+Driven+Iteration" alt="Analytics-Driven Iteration">
+      <h3>Analytics-Driven Iteration</h3>
       <ul>
-        <li><strong>Problem:</strong> Declining retention after initial adoption.</li>
-        <li><strong>Role:</strong> Data analysis, UX/engineering collaboration.</li>
-        <li><strong>Solution:</strong> Personalized notifications, guided workflows.</li>
-        <li><strong>Results:</strong> <strong>Retention +30%</strong>, feature usage +25%.</li>
+        <li><strong>Problem:</strong> Declining retention and feature adoption post-launch.</li>
+        <li><strong>Role:</strong> Data analysis, UX/engineering collaboration, KPI definition.</li>
+        <li><strong>Solution:</strong> Personalized notifications, guided workflows, and engagement tracking.</li>
+        <li><strong>Impact:</strong> +30% retention, +25% feature usage, improved long-term engagement.</li>
       </ul>
     </div>
 
-  </div>
-</section>
-
-<section>
-  <h2>Product Metrics</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Daily Active Users</h3>
-      <canvas id="dauChart" height="160"></canvas>
-    </div>
-
-    <div class="card">
-      <h3>User Retention</h3>
-      <canvas id="retentionChart" height="160"></canvas>
-    </div>
   </div>
 </section>
 
 <section id="skills">
   <h2>Skills & Tools</h2>
   <div class="skills">
-    <span class="skill">Product Lifecycle</span>
-    <span class="skill">UX/UI Collaboration</span>
-    <span class="skill">User Research</span>
-    <span class="skill">Data-Driven Decisions</span>
-    <span class="skill">Analytics (Amplitude/Mixpanel)</span>
-    <span class="skill">Agile/Scrum</span>
+    <span class="skill">Product Strategy & Vision</span>
+    <span class="skill">Outcome-Driven Roadmaps</span>
+    <span class="skill">B2B SaaS Products</span>
+    <span class="skill">User Journeys & Adoption</span>
+    <span class="skill">Cross-Functional Leadership</span>
     <span class="skill">Stakeholder Management</span>
-    <span class="skill">Community & Engagement Optimization</span>
+    <span class="skill">Product Discovery & PRDs</span>
+    <span class="skill">Agile Execution</span>
+    <span class="skill">Data-Informed Decision Making</span>
+    <span class="skill">Technical Fluency (Backend, Data, Integrations)</span>
   </div>
 </section>
 
@@ -172,52 +128,8 @@ strong {
   <h2>Contact</h2>
   <p>📧 <a href="mailto:osmroni@gmail.com">osmroni@gmail.com</a></p>
   <p>💼 <a href="http://linkedin.com/in/roni-shitrit">LinkedIn</a></p>
-  <p>🌐 Personal Website: <a href="https://www.yourdomain.com">www.yourdomain.com</a></p>
+  <p>🌐 Personal Website: <a href="https://osmroni.github.io/personal-website/">www.osmroni.github.io/personal-website</a></p>
 </section>
-
-<script>
-const cards = document.querySelectorAll('.card');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.opacity = 1;
-      e.target.style.transform = 'translateY(0)';
-    }
-  });
-});
-cards.forEach(c => observer.observe(c));
-
-function drawLineChart(canvasId, data, color) {
-  const c = document.getElementById(canvasId);
-  const ctx = c.getContext("2d");
-  const w = c.width = c.offsetWidth;
-  const h = c.height;
-
-  ctx.clearRect(0,0,w,h);
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 3;
-  ctx.beginPath();
-
-  data.forEach((v,i) => {
-    const x = (i/(data.length-1))*w;
-    const y = h - (v/100)*h;
-    i === 0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
-  });
-
-  ctx.stroke();
-}
-
-drawLineChart("dauChart",
-  [20,25,28,35,42,48,55,63,70,80],
-  "#6a5cff"
-);
-
-drawLineChart("retentionChart",
-  [100,72,58,46,39,33,28],
-  "#9aa0ff"
-);
-</script>
-
 
 <footer>
   <p>&copy; 2026 Roni Shitrit. Product Manager Portfolio.</p>
