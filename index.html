@@ -30,12 +30,10 @@
   h3 { font-size:1.5em; font-weight:600; color:#4b6cb7; margin-bottom:10px; }
 
   .container { display:flex; flex-wrap:wrap; gap:30px; }
-  .card { background:white; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.08); padding:25px; flex:1 1 300px; }
+  .card { background:white; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.08); padding:25px; flex:1 1 300px; cursor:pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .card:hover { transform: translateY(-4px); box-shadow:0 10px 24px rgba(0,0,0,0.12); }
   .card img { width:100%; border-radius:12px; margin-bottom:15px; }
   .card ul { padding-left:20px; }
-
-  #portfolio .card { cursor:pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; }
-  #portfolio .card:hover { transform: translateY(-4px); box-shadow:0 10px 24px rgba(0,0,0,0.12); }
 
   .skills { display:flex; flex-wrap:wrap; gap:15px; margin-top:20px; }
   .skill { background:#e0e7ff; padding:10px 15px; border-radius:20px; font-weight:600; font-size:0.9em; }
@@ -70,37 +68,34 @@
   <div class="container">
 
     <!-- Case Study 1 -->
-    <div class="card" onclick="window.location='case-study.html'">
+    <div class="card" onclick="window.location='case-study-legacy-redesign.html'">
       <img src="https://via.placeholder.com/600x350?text=Legacy+Product+Redesign" alt="Legacy Product Redesign">
       <h3>Legacy Product Redesign</h3>
       <ul>
         <li><strong>Problem:</strong> Low adoption due to outdated UX and fragmented workflows.</li>
-        <li><strong>Role:</strong> Full product lifecycle, UX & engineering collaboration.</li>
         <li><strong>Solution:</strong> Streamlined core workflows, simplified onboarding, interactive tutorials.</li>
         <li><strong>Impact:</strong> <strong>3× active users</strong>, +40% task completion, restored usability at scale.</li>
       </ul>
     </div>
 
     <!-- Case Study 2 -->
-    <div class="card">
+    <div class="card" onclick="window.location='case-study-legacy-saas-replacement.html'">
       <img src="https://via.placeholder.com/600x350?text=Legacy+SaaS+Replacement" alt="Legacy SaaS Replacement">
       <h3>Legacy SaaS Replacement</h3>
       <ul>
         <li><strong>Problem:</strong> Outdated system limiting new workflows and adoption.</li>
-        <li><strong>Role:</strong> Product pivot strategy, end-to-end delivery, cross-functional coordination.</li>
         <li><strong>Solution:</strong> Replaced legacy system with modern SaaS, enabling expansion into new workflows.</li>
         <li><strong>Impact:</strong> <strong>3× active users</strong>, increased engagement, scalable platform for future features.</li>
       </ul>
     </div>
 
     <!-- Case Study 3 -->
-    <div class="card">
+    <div class="card" onclick="window.location='case-study-analytics-iteration.html'">
       <img src="https://via.placeholder.com/600x350?text=Analytics+Driven+Iteration" alt="Analytics-Driven Iteration">
       <h3>Analytics-Driven Iteration</h3>
       <ul>
         <li><strong>Problem:</strong> Declining retention and feature adoption post-launch.</li>
-        <li><strong>Role:</strong> Data analysis, UX/engineering collaboration, KPI definition.</li>
-        <li><strong>Solution:</strong> Personalized notifications, guided workflows, and engagement tracking.</li>
+        <li><strong>Solution:</strong> Personalized notifications, guided workflows, engagement tracking.</li>
         <li><strong>Impact:</strong> +30% retention, +25% feature usage, improved long-term engagement.</li>
       </ul>
     </div>
@@ -128,7 +123,7 @@
   <h2>Contact</h2>
   <p>📧 <a href="mailto:osmroni@gmail.com">osmroni@gmail.com</a></p>
   <p>💼 <a href="http://linkedin.com/in/roni-shitrit">LinkedIn</a></p>
-  <p>🌐 Personal Website: <a href="https://osmroni.github.io/personal-website/">www.osmroni.github.io/personal-website</a></p>
+  <p>🌐 Personal Website: <a href="https://osmroni.github.io/personal-website/">www.osmroni.github.io/personal-website/</a></p>
 </section>
 
 <footer>
